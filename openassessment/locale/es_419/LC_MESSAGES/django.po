@@ -488,7 +488,10 @@ msgid ""
 "This assignment has several steps. In the first step, you'll provide a "
 "response to the question. The other steps appear below the Your Response "
 "field."
-msgstr "Esta tarea tiene varias etapas. En la primer etapa proveerás una respuesta a la pregunta. Las otras etapas aparecerán abajo en el campo Tu Respuesta"
+msgstr ""
+"Esta tarea tiene varias etapas. En la primera etapa debes proveer una respuesta a la pregunta"
+"formulada por el equipo académico. Las etapas restantes aparecerán debajo de la sección"
+"Su respuesta"
 
 #: openassessment/templates/openassessmentblock/oa_base.html:31
 msgid "This step's status:"
@@ -1140,7 +1143,7 @@ msgid ""
 "Your response is still undergoing peer assessment. After your peers have "
 "assessed your response, you'll see their comments and receive your final "
 "grade."
-msgstr "Tu respuesta aun está siendo evaluada por tus compañeros. Después que ellos hayan evaluado tu respuesta, verás sus comentarios y recibiras tu calificación final."
+msgstr "Tu respuesta va a ser evaluada por tus compañeros. Después que ellos hayan evaluado tu respuesta, podrás visualizar los comentarios y la calificación de tu tarea"
 
 #: openassessment/templates/openassessmentblock/grade/oa_grade_waiting.html:22
 msgid ""
@@ -1237,7 +1240,10 @@ msgid ""
 "\n"
 "                    This assignment has several steps. In the first step, you'll provide a response to the question. The other steps appear below the %(start_tag)sYour Response%(end_tag)s field.\n"
 "                "
-msgstr "\n                    Esta tarea tiene varias etapas. En la primer etapa es proveer una respuesta a la pregunta. Las otras etapas aparecerán debajo de%(start_tag)sSu respuesta%(end_tag)s.\n                "
+msgstr "" 
+"\n"
+"                   Esta tarea tiene varias etapas. En la primera etapa debes proveer una respuesta a la pregunta formulada por el equipo académico. Las etapas restantes aparecerán debajo de la sección%(start_tag)s Su respuesta%(end_tag)s.\n                "
+
 
 #: openassessment/templates/openassessmentblock/message/oa_message_peer.html:6
 msgid "Waiting for Peer Submissions"
