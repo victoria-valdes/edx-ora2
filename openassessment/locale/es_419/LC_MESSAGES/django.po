@@ -1963,9 +1963,10 @@ msgstr ""
 msgid "The submission format is invalid."
 msgstr ""
 
-
-#: openassessment/templates/openassessmentblock/leaderboard/oa_leaderboard_show.html:23
-#: openassessment/templates/openassessmentblock/peer/oa_peer_turbo_mode.html:53
-#: openassessment/templates/openassessmentblock/peer/oa_peer_assessment.html:69
+# pruebas
+# openassessment/templates/openassessmentblock/leaderboard/oa_leaderboard_show.html:23
+# openassessment/templates/openassessmentblock/peer/oa_peer_turbo_mode.html:53
+# openassessment/templates/openassessmentblock/peer/oa_peer_assessment.html:69
+#: openassessment/templates/openassessmentblock/oa_submission_answer.html
 msgid "Your peer's response to the question above:"
 msgstr "La respuesta de tu compañero que debes evaluar está acá abajo:"
