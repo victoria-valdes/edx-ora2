@@ -116,12 +116,12 @@ msgstr "No se pudo cargar la revisión de pares."
 #: build/lib.linux-x86_64-2.7/openassessment/xblock/peer_assessment_mixin.py:208
 #: openassessment/xblock/peer_assessment_mixin.py:208
 msgid "Submit your assessment & review another response"
-msgstr "Entrega tu revisión y revisa otra respuesta"
+msgstr "Envía tu revisión y revisa otra tarea"
 
 #: build/lib.linux-x86_64-2.7/openassessment/xblock/peer_assessment_mixin.py:212
 #: openassessment/xblock/peer_assessment_mixin.py:212
 msgid "Submit your assessment & move onto next step"
-msgstr "Entrega tu revisión y pasa al siguiente paso"
+msgstr "Envía tu revisión"
 
 #: build/lib.linux-x86_64-2.7/openassessment/xblock/peer_assessment_mixin.py:216
 #: openassessment/xblock/peer_assessment_mixin.py:216
