@@ -120,7 +120,7 @@ msgstr "Guardando..."
 #: openassessment/xblock/static/js/openassessment-lms.min.js:1
 #: openassessment/xblock/static/js/src/lms/oa_response.js:376
 msgid "This response has been saved but not submitted."
-msgstr "La respuesta ha sido guardada, pero no enviada."
+msgstr "EL TEXTO HA SIDO GUARDADO, PERO NO ENVIADO."
 
 #: openassessment/xblock/static/js/openassessment-lms.min.js:1
 #: openassessment/xblock/static/js/src/lms/oa_response.js:379

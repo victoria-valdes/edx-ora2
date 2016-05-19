@@ -331,7 +331,7 @@ msgstr "Error al recuperar la URL subida."
 #: build/lib.linux-x86_64-2.7/openassessment/xblock/submission_mixin.py:294
 #: openassessment/xblock/submission_mixin.py:311
 msgid "This response has been saved but not submitted."
-msgstr "La respuesta ha sido guardada, pero no enviada."
+msgstr "EL TEXTO HA SIDO GUARDADO, PERO NO ENVIADO."
 
 #: build/lib.linux-x86_64-2.7/openassessment/xblock/submission_mixin.py:294
 #: openassessment/xblock/submission_mixin.py:311
@@ -489,9 +489,9 @@ msgid ""
 "response to the question. The other steps appear below the Your Response "
 "field."
 msgstr ""
-"Esta tarea tiene varias etapas. En la primera etapa debes proveer una respuesta a la pregunta"
-"formulada por el equipo académico. Las etapas restantes aparecerán debajo de la sección"
-"Su respuesta"
+"Esta tarea tiene varias etapas. En la primera etapa debes proveer un texto"
+"de acuerdo a las indicaciones del equipo académico. Luego del envío, aparecerán las etapas restantes debajo de la sección "
+"Tu texto."
 
 #: openassessment/templates/openassessmentblock/oa_base.html:31
 msgid "This step's status:"
@@ -955,7 +955,7 @@ msgstr "\n                            %(points_earned)s de %(points_possible)s\n
 #: openassessment/templates/openassessmentblock/response/oa_response_submitted.html:43
 #: openassessment/templates/openassessmentblock/self/oa_self_assessment.html:43
 msgid "Your Response"
-msgstr "Su respuesta."
+msgstr "Tu texto"
 
 #: openassessment/templates/openassessmentblock/grade/oa_grade_complete.html:37
 #: openassessment/templates/openassessmentblock/response/oa_response_graded.html:30
@@ -973,7 +973,7 @@ msgstr "La imagen asociada a su presentación"
 
 #: openassessment/templates/openassessmentblock/grade/oa_grade_complete.html:47
 msgid "Assessments of Your Response"
-msgstr "Evaluaciones de su respuesta"
+msgstr "Evaluación a tu trabajo"
 
 #: openassessment/templates/openassessmentblock/grade/oa_grade_complete.html:58
 msgid "Overall Grade"
@@ -1098,7 +1098,7 @@ msgstr "Estas valoraciones no fueron útiles."
 
 #: openassessment/templates/openassessmentblock/grade/oa_grade_complete.html:302
 msgid "I disagree with one or more of the peer assessments of my response."
-msgstr "No estoy de acuerdo con una o más de las evaluaciones brindadas por mis compañeros a mi respuesta."
+msgstr "No estoy de acuerdo con una o más de las evaluaciones brindadas por mis compañeros/as a mi trabajo."
 
 #: openassessment/templates/openassessmentblock/grade/oa_grade_complete.html:310
 msgid "Some comments I received were inappropriate."
@@ -1143,7 +1143,10 @@ msgid ""
 "Your response is still undergoing peer assessment. After your peers have "
 "assessed your response, you'll see their comments and receive your final "
 "grade."
-msgstr "Tu respuesta va a ser evaluada por tus compañeros. Después que ellos hayan evaluado tu respuesta, podrás visualizar los comentarios y la calificación de tu tarea"
+msgstr ""
+"Tu texto va a ser evaluado por tus compañeros/as. Después de que"
+" hayan evaluado tu texto, podrás visualizar los comentarios y la calificación de tu"
+" trabajo."
 
 #: openassessment/templates/openassessmentblock/grade/oa_grade_waiting.html:22
 msgid ""
@@ -1207,7 +1210,9 @@ msgstr "Ha completado la tarea"
 msgid ""
 "Your grade will be available when your peers have completed their "
 "assessments of your response."
-msgstr "Tu calificación se encontrará disponible cuando tus compañeros completen sus evaluaciones a tu respuesta"
+msgstr ""
+"Tu calificación se encontrará disponible cuando tus compañeros/as"
+" evalúen tu trabajo."
 
 #: openassessment/templates/openassessmentblock/message/oa_message_complete.html:10
 msgid ""
@@ -1242,7 +1247,8 @@ msgid ""
 "                "
 msgstr "" 
 "\n"
-"                   Esta tarea tiene varias etapas. En la primera etapa debes proveer una respuesta a la pregunta formulada por el equipo académico. Las etapas restantes aparecerán debajo de la sección%(start_tag)s Su respuesta%(end_tag)s.\n                "
+"                   Esta tarea tiene varias etapas. En la primera etapa debes proveer un texto de acuerdo a las indicaciones del equipo académico. Luego del envío," 
+"aparecerán las etapas restantes debajo de la sección%(start_tag)s Tu texto%(end_tag)s.\n                "
 
 
 #: openassessment/templates/openassessmentblock/message/oa_message_peer.html:6
@@ -1335,7 +1341,7 @@ msgstr "Las instrucciones para este paso no pueden ser cargadas."
 
 #: openassessment/templates/openassessmentblock/peer/oa_peer_assessment.html:16
 msgid "Assess Peers"
-msgstr "Evaluar compañeros"
+msgstr "Paso 2. Evaluar compañeros/as"
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "available August 13th, 2014 (in 5 days and
@@ -1393,7 +1399,7 @@ msgstr "\n                    En progreso (%(num_graded)s de %(num_must_grade)s)
 #: openassessment/templates/openassessmentblock/peer/oa_peer_assessment.html:51
 #: openassessment/templates/openassessmentblock/peer/oa_peer_turbo_mode.html:38
 msgid "Read and assess the following response from one of your peers."
-msgstr "Lea y evalúe la siguiente respuesta al problema dada por uno de sus pares."
+msgstr "Lee y evalúa el siguiente texto de uno de tus compañeros/as."
 
 #: openassessment/templates/openassessmentblock/peer/oa_peer_assessment.html:62
 #, python-format
@@ -1506,7 +1512,7 @@ msgstr "\n          En Progreso (%(num_graded)s de %(num_must_grade)s)\n        
 
 #: openassessment/templates/openassessmentblock/peer/oa_peer_waiting.html:28
 msgid "Waiting for Peer Responses"
-msgstr "Esperando por las respuestas de compañeros"
+msgstr "Esperando por los textos de tus compañeros"
 
 #: openassessment/templates/openassessmentblock/peer/oa_peer_waiting.html:31
 msgid ""
@@ -1514,7 +1520,10 @@ msgid ""
 "more students have submitted responses. You'll receive your grade after "
 "you've completed all the steps for this problem and your peers have assessed"
 " your response."
-msgstr "Todas las respuestas presentadas por los pares han sido revisadas. Compruebe más tarde para ver si más estudiantes han presentado respuestas. Usted recibirá su calificación después de haber completado todos los pasos y sus pares le hayan calificado."
+msgstr ""
+"Todas las respuestas presentadas por los pares han sido revisadas. Compruebe más tarde para ver si"
+" más estudiantes han enviado sus trabajos. Usted recibirá su calificación después"
+" de haber completado todos los pasos y sus pares le hayan calificado."
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "due August 13th, 2014 (in 5 days and 45
@@ -1543,11 +1552,11 @@ msgstr "Puede guardar su progreso y regresar a completar su respuesta en cualqui
 #: openassessment/templates/openassessmentblock/response/oa_response.html:46
 msgid ""
 "You can save your progress and return to complete your response at any time."
-msgstr "Puede guardar su progreso y regresar a completar su respuesta en cualquier momento."
+msgstr "Puedes guardar tu progreso y regresar a completarlo en cualquier momento."
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:48
 msgid "After you submit your response, you cannot edit it"
-msgstr "Tras subir su respuesta no podrá editarla"
+msgstr "Una vez que envíes tu texto, no podrás continuar editándolo."
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:58
 msgid "The prompt for this section."
@@ -1555,7 +1564,7 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:65
 msgid "Your response to the question above."
-msgstr ""
+msgstr "Tu texto"
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:79
 msgid "We could not upload this image"
@@ -1571,7 +1580,7 @@ msgstr "Cargue su imagen"
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:100
 msgid "You may continue to work on your response until you submit it."
-msgstr "Puede continuar trabajando en su respuesta hasta que la publique."
+msgstr "Puedes continuar trabajando en tu texto hasta que lo envíes."
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:104
 msgid "We could not save your progress"
@@ -1599,7 +1608,7 @@ msgstr "No pudimos subir su respuesta"
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:152
 msgid "Submit your response and move to the next step"
-msgstr "Publique su respuesta y continúe a la siguiente etapa"
+msgstr "Envía tu texto y continúa a la siguiente etapa"
 
 #: openassessment/templates/openassessmentblock/response/oa_response_cancelled.html:24
 msgid "Submission Cancelled"
@@ -1637,7 +1646,7 @@ msgstr "Completo"
 
 #: openassessment/templates/openassessmentblock/response/oa_response_submitted.html:23
 msgid "Your Response Has Been Submitted"
-msgstr "Su respuesta ha sido publicada"
+msgstr "TU TEXTO HA SIDO ENVIADO"
 
 #: openassessment/templates/openassessmentblock/response/oa_response_submitted.html:26
 #, python-format
@@ -1653,7 +1662,10 @@ msgid ""
 "\n"
 "                        You'll receive your grade after some of your peers have assessed your response and you complete the %(start_tag)speer assessment%(end_tag)s step.\n"
 "                    "
-msgstr "\n                        Recibirá su calificación después de que el número requerido de pares haya revisado su respuesta y ud haya completado el paso de  %(start_tag)scalificación por pares%(end_tag)s.\n                    "
+msgstr ""
+"\n"
+"                        Recibirás tu calificación después que el número requerido de pares haya revisado tu texto y hayas completado el paso 2 de %(start_tag)sevaluación a los pares%(end_tag)s.\n"
+"                    "
 
 #: openassessment/templates/openassessmentblock/response/oa_response_submitted.html:34
 #, python-format
@@ -1969,4 +1981,4 @@ msgstr ""
 # openassessment/templates/openassessmentblock/peer/oa_peer_assessment.html:69
 #: openassessment/templates/openassessmentblock/oa_submission_answer.html
 msgid "Your peer's response to the question above:"
-msgstr "La respuesta de tu compañero que debes evaluar está acá abajo:"
+msgstr "El texto de tu compañero/a que debes evaluar está acá abajo:"
