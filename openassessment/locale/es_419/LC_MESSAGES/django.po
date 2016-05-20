@@ -1247,7 +1247,7 @@ msgid ""
 "                "
 msgstr "" 
 "\n"
-"                   Esta tarea tiene varias etapas. En la primera etapa debes proveer un texto de acuerdo a las indicaciones del equipo académico. Luego del envío," 
+"                   Esta tarea tiene varias etapas. En la primera etapa debes proveer un texto de acuerdo a las indicaciones del equipo académico. Luego del envío, " 
 "aparecerán las etapas restantes debajo de la sección%(start_tag)s Tu texto%(end_tag)s.\n                "
 
 
@@ -1541,7 +1541,7 @@ msgstr "En progreso"
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:42
 msgid "Enter your response to the question."
-msgstr "Escriba su respuesta a la pregunta."
+msgstr "Ingresa tu texto en este espacio."
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:44
 msgid ""
