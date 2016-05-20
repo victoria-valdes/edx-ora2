@@ -955,7 +955,7 @@ msgstr "\n                            %(points_earned)s de %(points_possible)s\n
 #: openassessment/templates/openassessmentblock/response/oa_response_submitted.html:43
 #: openassessment/templates/openassessmentblock/self/oa_self_assessment.html:43
 msgid "Your Response"
-msgstr "Tu texto"
+msgstr "Paso 1 (Tu texto)"
 
 #: openassessment/templates/openassessmentblock/grade/oa_grade_complete.html:37
 #: openassessment/templates/openassessmentblock/response/oa_response_graded.html:30
