@@ -1982,3 +1982,10 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/oa_submission_answer.html
 msgid "Your peer's response to the question above:"
 msgstr "El texto de tu compañero/a que debes evaluar está acá abajo:"
+
+#: openassessment/templates/openassessmentblock/response/oa_response.html
+msgid "Enter your response to the question above."
+msgstr "Ingresa aquí tu texto."
+
+
+
