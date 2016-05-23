@@ -1992,6 +1992,3 @@ msgstr "Ingresa aquí tu texto."
 msgid "Your response to the question above:"
 msgstr "Tu texto"
 
-
-
-
