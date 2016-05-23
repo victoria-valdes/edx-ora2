@@ -1987,5 +1987,11 @@ msgstr "El texto de tu compañero/a que debes evaluar está acá abajo:"
 msgid "Enter your response to the question above."
 msgstr "Ingresa aquí tu texto."
 
+#: openassessment/templates/openassessmentblock/self/oa_self_assessment.html
+#: openassessment/templates/openassessmentblock/response/oa_response_submitted.html
+msgid "Your response to the question above:"
+msgstr "Tu texto"
+
+
 
 
