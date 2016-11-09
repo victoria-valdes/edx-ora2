@@ -299,6 +299,10 @@ class OpenAssessmentBlock(
             frag.add_css(load("static/css/openassessment-ltr.css"))
 
         frag.add_javascript(load("static/js/openassessment-lms.min.js"))
+        frag.add_javascript_url("http://cdn.tinymce.com/4/tinymce.min.js")
+        frag.add_css_url("http:////www.tinymce.com/css/codepen.min.css")
+        frag.add_javascript("function temp() {tinymce.init({selector: '.submission__answer__part__text__value', height: 500,plugins: ['advlist autolink lists link anchor'],menubar: false});}")
+        frag.add_javascript("setTimeout('temp()', 5000); ")
         frag.initialize_js('OpenAssessmentBlock')
         return frag
 
