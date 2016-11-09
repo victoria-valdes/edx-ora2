@@ -302,7 +302,9 @@ class OpenAssessmentBlock(
         frag.add_javascript_url("http://cdn.tinymce.com/4/tinymce.min.js")
         frag.add_css_url("http:////www.tinymce.com/css/codepen.min.css")
         frag.add_javascript("function temp() {tinymce.init({selector: '.submission__answer__part__text__value', height: 500,plugins: ['advlist autolink lists link anchor'],menubar: false});}")
+        frag.add_javascript("function temp2(){var temp=tinymce.get('.submission__answer__part__text__value').getContent({format : 'raw'}); console.log(temp);}")
         frag.add_javascript("setTimeout('temp()', 5000); ")
+        frag.add_javascript("setTimeout('temp2()', 5001); ")
         frag.initialize_js('OpenAssessmentBlock')
         return frag
 
