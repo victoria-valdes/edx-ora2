@@ -301,7 +301,7 @@ class OpenAssessmentBlock(
         frag.add_javascript(load("static/js/openassessment-lms.min.js"))
         frag.add_javascript_url("http://cdn.tinymce.com/4/tinymce.min.js")
         frag.add_css_url("http:////www.tinymce.com/css/codepen.min.css")
-        frag.add_javascript("function temp() {tinymce.init({selector: '.submission__answer__part__text__value', height: 500,plugins: ['advlist autolink lists link anchor'],menubar: false, init_instance_callback: function (editor) { editor.on('Change', function (e) { var real_text = tinymce.activeEditor.getContent({format: 'raw'}); console.log(meh); tinymce.DOM.setHTML('tmce_id_field', real_text);});}});}")
+        frag.add_javascript("function temp() {tinymce.init({selector: '.submission__answer__part__text__value', height: 500,plugins: ['advlist autolink lists link anchor'],menubar: false, init_instance_callback: function (editor) { editor.on('Change', function (e) { var real_text = tinymce.activeEditor.getContent({format: 'raw'}); console.log(real_text); tinymce.DOM.setHTML('tmce_id_field', real_text);});}});}")
         frag.add_javascript("setTimeout('temp()', 5000); ")
         frag.initialize_js('OpenAssessmentBlock')
         return frag
