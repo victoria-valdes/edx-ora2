@@ -46,6 +46,7 @@ OpenAssessment.ResponseView.prototype = {
                 $('#openassessment__response', view.element).replaceWith(html);
                 view.server.renderLatex($('#openassessment__response', view.element));
                 view.installHandlers();
+                view.submitEnabled(true);
                 view.setAutoSaveEnabled(true);
             }
         ).fail(function(errMsg) {
@@ -66,7 +67,6 @@ OpenAssessment.ResponseView.prototype = {
         // Install change handler for textarea (to enable submission button)
         this.savedResponse = this.response();
         var handleChange = function(eventData) { view.handleResponseChanged(); };
-        view.submitEnabled(true);
         sel.find('.submission__answer__part__text__value').on('change keyup drop paste', handleChange);
         
         var handlePrepareUpload = function(eventData) { view.prepareUpload(eventData.target.files); };
