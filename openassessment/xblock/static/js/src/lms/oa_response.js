@@ -321,7 +321,7 @@ OpenAssessment.ResponseView.prototype = {
     **/
     handleResponseChanged: function() {
         // Enable the save/submit button only for non-blank responses
-        var isNotBlank = !this.response().every(function(element, index, array) {
+        var isNotBlank = this.response().every(function(element, index, array) {
                 return $.trim(element) == '';
             });
         this.submitEnabled(isNotBlank);
