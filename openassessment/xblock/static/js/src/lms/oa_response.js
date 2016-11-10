@@ -66,8 +66,8 @@ OpenAssessment.ResponseView.prototype = {
         // Install change handler for textarea (to enable submission button)
         this.savedResponse = this.response();
         var handleChange = function(eventData) { view.handleResponseChanged(); };
-        sel.find('.submission__answer__part__text__value').on('change keyup drop paste DOMNodeInserted DOMNodeRemoved webkitTransitionEnd', handleChange);
-        $('.submission__answer__part__text__value').on('change keyup drop paste DOMNodeInserted DOMNodeRemoved webkitTransitionEnd', handleChange);
+        sel.find('.submission__answer__part__text__value').on('change keyup drop paste', handleChange);
+        
         
         var handlePrepareUpload = function(eventData) { view.prepareUpload(eventData.target.files); };
         sel.find('input[type=file]').on('change', handlePrepareUpload);
@@ -321,19 +321,19 @@ OpenAssessment.ResponseView.prototype = {
     **/
     handleResponseChanged: function() {
         // Enable the save/submit button only for non-blank responses
-        var isNotBlank = this.response().every(function(element, index, array) {
+        var isNotBlank = !this.response().every(function(element, index, array) {
                 return $.trim(element) == '';
             });
         this.submitEnabled(isNotBlank);
 
         // Update the save button, save status, and "unsaved changes" warning
         // only if the response has changed
-        if (this.responseChanged()) {
+        //if (this.responseChanged()) {
             this.saveEnabled(isNotBlank);
             this.previewEnabled(isNotBlank);
             this.saveStatus(gettext('This response has not been saved.'));
             this.unsavedWarningEnabled(true);
-        }
+        //}
 
         // Record the current time (used for autosave)
         this.lastChangeTime = Date.now();
