@@ -66,7 +66,8 @@ OpenAssessment.ResponseView.prototype = {
         // Install change handler for textarea (to enable submission button)
         this.savedResponse = this.response();
         var handleChange = function(eventData) { view.handleResponseChanged(); };
-        sel.find('.submission__answer__part__text__value').ready(handleChange);
+        view.submitEnabled(true);
+        sel.find('.submission__answer__part__text__value').on('change keyup drop paste', handleChange);
         
         var handlePrepareUpload = function(eventData) { view.prepareUpload(eventData.target.files); };
         sel.find('input[type=file]').on('change', handlePrepareUpload);
