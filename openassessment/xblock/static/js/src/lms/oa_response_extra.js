@@ -29,7 +29,10 @@ function temp_tmce() {
                     });
     }
 
-function temp_css() {$('#submission__save').removeClass('is--disabled');}
+function temp_css() {
+    $('#submission__save').removeClass('is--disabled');
+    $("#submission__answer__part__text__1").css({"visibility":"hidden","height":"0px"});
+    }
 
 setTimeout('temp_tmce()', 5000);
 setTimeout('temp_css()', 5000);
