@@ -7,6 +7,7 @@ function temp_tmce() {
     init_instance_callback: function (editor) {
         var saved_text = tinymce.DOM.getOuterHTML(submission__answer__part__text__1);
         tinymce.activeEditor.setContent( saved_text , {format: 'raw'});
+        tinyMCE.activeEditor.dom.remove('submission__answer__part__text__1', true);
         editor.on('change', function (e) { 
             var real_text = tinymce.activeEditor.getContent({format: 'raw'}); 
                             //console.log(real_text); 
@@ -32,7 +33,7 @@ function temp_tmce() {
     }
 function temp_css() {
     $('#submission__save').removeClass('is--disabled');
-    $("#submission__answer__part__text__1").css({"visibility":"hidden","height":"0px"});
+    $("#submission__answer__part__text__1").css({"visibility":"hidden","min-height":"10px"});
     }
 setTimeout('temp_tmce()', 5000);
 setTimeout('temp_css()', 5000);
