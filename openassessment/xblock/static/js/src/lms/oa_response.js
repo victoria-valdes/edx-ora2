@@ -328,12 +328,12 @@ OpenAssessment.ResponseView.prototype = {
 
         // Update the save button, save status, and "unsaved changes" warning
         // only if the response has changed
-        //if (this.responseChanged()) {
+        if (this.responseChanged()) {
             this.saveEnabled(isNotBlank);
             this.previewEnabled(isNotBlank);
             this.saveStatus(gettext('This response has not been saved.'));
             this.unsavedWarningEnabled(true);
-        //}
+        }
 
         // Record the current time (used for autosave)
         this.lastChangeTime = Date.now();
