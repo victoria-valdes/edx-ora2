@@ -4,35 +4,35 @@ function temp_tmce() {
     height: 500,
     plugins: ['advlist autolink lists link anchor'],
     menubar: false, 
-    init_instance_callback: function (editor) { 
+    init_instance_callback: function (editor) {
+        var saved_text = tinymce.DOM.getOuterHTML(submission__answer__part__text__1);
+        tinymce.activeEditor.setContent( saved_text , {format: 'raw'});
         editor.on('change', function (e) { 
             var real_text = tinymce.activeEditor.getContent({format: 'raw'}); 
-                            console.log(real_text); 
+                            //console.log(real_text); 
                             tinymce.DOM.setHTML('submission__answer__part__text__1', real_text);
                             });
         editor.on('keyup', function (e) { 
             var real_text = tinymce.activeEditor.getContent({format: 'raw'}); 
-                            console.log(real_text); 
+                            //console.log(real_text); 
                             tinymce.DOM.setHTML('submission__answer__part__text__1', real_text);
                             });
         editor.on('drop', function (e) { 
             var real_text = tinymce.activeEditor.getContent({format: 'raw'}); 
-                            console.log(real_text); 
+                            //console.log(real_text); 
                             tinymce.DOM.setHTML('submission__answer__part__text__1', real_text);
                             });
         editor.on('paste', function (e) { 
             var real_text = tinymce.activeEditor.getContent({format: 'raw'}); 
-                            console.log(real_text); 
+                            //console.log(real_text); 
                             tinymce.DOM.setHTML('submission__answer__part__text__1', real_text);
-                            });                                                                                    
+                            });                                                                                   
                         }
                     });
     }
-
 function temp_css() {
     $('#submission__save').removeClass('is--disabled');
     $("#submission__answer__part__text__1").css({"visibility":"hidden","height":"0px"});
     }
-
 setTimeout('temp_tmce()', 5000);
 setTimeout('temp_css()', 5000);
