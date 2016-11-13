@@ -3,7 +3,8 @@ function temp_tmce() {
     selector: '.submission__answer__part__text__value2', 
     height: 500,
     plugins: ['advlist autolink lists link anchor'],
-    menubar: false, 
+    menubar: false,
+    content_css: '//www.tinymce.com/css/codepen.min.css',        
     init_instance_callback: function (editor) {
         var saved_text = tinymce.DOM.getOuterHTML(submission__answer__part__text__1);
         tinymce.activeEditor.setContent( saved_text , {format: 'raw'});
