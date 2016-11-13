@@ -32,6 +32,16 @@ function temp_tmce() {
                         }
                     });
     }
+function temp_tmce_or() {
+	tinymce.init({
+		height: 500,
+		selector: '.submission__answer__part__text__value',
+		content_css: '//www.tinymce.com/css/codepen.min.css',
+		menubar: false,
+		toolbar: false,
+		readonly : true
+	});
+}
 function temp_css() {
     $("#submission__answer__part__text__1").css({"visibility":"hidden","min-height":"1px","max-height":"1px"});
     }
@@ -39,5 +49,6 @@ function timer_button() {
     $('#submission__save').removeClass('is--disabled');
     }
 setTimeout('temp_tmce()', 5000);
+setTimeout('temp_tmce_or()', 5000);
 setTimeout('temp_css()', 5000);
 setInterval('timer_button()', 3000);
