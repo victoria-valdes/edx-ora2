@@ -37,10 +37,10 @@ function temp_tmce_or() {
 		toolbar: false,
 		readonly : true,
 		init_instance_callback: function (editor) {
-        		var saved_text = tinymce.activeEditor.selection.getContent({format: 'raw'});
+        		var saved_text = tinymce.activeEditor.selection.getContent({format: 'text'});
 			console.log(saved_text); 
-        		tinymce.activeEditor.setContent( saved_text , {format: 'raw'});
-        		tinymce.activeEditor.dom.remove('<p>"', true);
+        		//tinymce.activeEditor.setContent( saved_text , {format: 'raw'});
+        		//tinymce.activeEditor.dom.remove('<p>"', true);
 			}
 		});
 }
