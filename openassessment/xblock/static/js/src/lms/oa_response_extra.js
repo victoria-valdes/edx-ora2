@@ -37,10 +37,8 @@ function temp_tmce_or() {
 		toolbar: false,
 		readonly : true,
 		init_instance_callback: function (editor) {
-        		var saved_text = tinymce.activeEditor.getContent({format: 'raw'});
-			console.log(saved_text); 
-        		//tinymce.activeEditor.setContent( saved_text , {format: 'raw'});
-        		//tinymce.activeEditor.dom.remove('<p>"', true);
+            		var saved_text = tinymce.activeEditor.getContent({format: 'text'});
+           		tinymce.activeEditor.setContent(saved_text , {format: 'raw'});
 			}
 		});
 }
