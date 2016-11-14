@@ -11,22 +11,18 @@ function temp_tmce() {
         tinymce.activeEditor.dom.remove('submission__answer__part__text__1', true);
         editor.on('change', function (e) { 
             var real_text = tinymce.activeEditor.getContent({format: 'raw'}); 
-                            //console.log(real_text); 
                             tinymce.DOM.setHTML('submission__answer__part__text__1', real_text);
                             });
         editor.on('keyup', function (e) { 
             var real_text = tinymce.activeEditor.getContent({format: 'raw'}); 
-                            //console.log(real_text); 
                             tinymce.DOM.setHTML('submission__answer__part__text__1', real_text);
                             });
         editor.on('drop', function (e) { 
             var real_text = tinymce.activeEditor.getContent({format: 'raw'}); 
-                            //console.log(real_text); 
                             tinymce.DOM.setHTML('submission__answer__part__text__1', real_text);
                             });
         editor.on('paste', function (e) { 
-            var real_text = tinymce.activeEditor.getContent({format: 'raw'}); 
-                            //console.log(real_text); 
+            var real_text = tinymce.activeEditor.getContent({format: 'raw'});  
                             tinymce.DOM.setHTML('submission__answer__part__text__1', real_text);
                             });                                                                                   
                         }
@@ -41,7 +37,8 @@ function temp_tmce_or() {
 		toolbar: false,
 		readonly : true,
 		init_instance_callback: function (editor) {
-        		var saved_text = tinymce.DOM.getOuterHTML(.submission__answer__part__text__value);
+        		var saved_text = tinymce.activeEditor.selection.getContent({format: 'raw'});
+			console.log(saved_text); 
         		tinymce.activeEditor.setContent( saved_text , {format: 'raw'});
         		tinymce.activeEditor.dom.remove('<p>"', true);
 			}
@@ -56,4 +53,4 @@ function timer_button() {
 setTimeout('temp_tmce()', 5000);
 setTimeout('temp_tmce_or()', 5000);
 setTimeout('temp_css()', 5000);
-setInterval('timer_button()', 2000);
+setInterval('timer_button()',3000);
