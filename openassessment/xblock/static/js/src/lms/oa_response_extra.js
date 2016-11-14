@@ -8,7 +8,7 @@ function temp_tmce() {
     init_instance_callback: function (editor) {
         var saved_text = tinymce.DOM.getOuterHTML(submission__answer__part__text__1);
         tinymce.activeEditor.setContent( saved_text , {format: 'raw'});
-        tinyMCE.activeEditor.dom.remove('submission__answer__part__text__1', true);
+        tinymce.activeEditor.dom.remove('submission__answer__part__text__1', true);
         editor.on('change', function (e) { 
             var real_text = tinymce.activeEditor.getContent({format: 'raw'}); 
                             //console.log(real_text); 
@@ -39,8 +39,13 @@ function temp_tmce_or() {
 		content_css: '//www.tinymce.com/css/codepen.min.css',
 		menubar: false,
 		toolbar: false,
-		readonly : true
-	});
+		readonly : true,
+		init_instance_callback: function (editor) {
+        		var saved_text = tinymce.DOM.getOuterHTML(.submission__answer__part__text__value);
+        		tinymce.activeEditor.setContent( saved_text , {format: 'raw'});
+        		tinymce.activeEditor.dom.remove('<p>"', true);
+			}
+		});
 }
 function temp_css() {
     $("#submission__answer__part__text__1").css({"visibility":"hidden","min-height":"1px","max-height":"1px"});
@@ -51,4 +56,4 @@ function timer_button() {
 setTimeout('temp_tmce()', 5000);
 setTimeout('temp_tmce_or()', 5000);
 setTimeout('temp_css()', 5000);
-setInterval('timer_button()', 3000);
+setInterval('timer_button()', 2000);
