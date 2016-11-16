@@ -47,6 +47,7 @@ function temp_css() {
     }
 function timer_button() {
     $('#submission__save').removeClass('is--disabled');
+    $('.submission--image').attr('download', 'archivo.pdf');		
     }
 setTimeout('temp_tmce()', 5000);
 setTimeout('temp_tmce_or()', 5000);
