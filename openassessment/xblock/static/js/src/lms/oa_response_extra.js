@@ -1,7 +1,7 @@
 function temp_tmce() {
     tinymce.init({
     selector: '.submission__answer__part__text__value2',
-    auto_focus: 'mce_0',	    
+    auto_focus: 'text-layer',	    
     height: 500,
     plugins: ['advlist autolink lists link anchor'],
     menubar: false,
