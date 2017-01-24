@@ -6,35 +6,32 @@ function temp_tmce() {
     plugins: ['advlist autolink lists link anchor'],
     menubar: false,
     language_url : '/tiny_es.js',
-    content_css: '//www.tinymce.com/css/codepen.min.css',        
+    content_css: '//www.tinymce.com/css/codepen.min.css',
     init_instance_callback: function (editor) {
         var saved_text = tinymce.DOM.getOuterHTML(submission__answer__part__text__1);
         tinymce.activeEditor.setContent( saved_text , {format: 'raw'});
         tinymce.activeEditor.dom.remove('submission__answer__part__text__1', true);
-        editor.on('init', function (e) { 
-            var real_text = tinymce.activeEditor.getContent({format: 'raw'}); 
-                tinymce.DOM.setHTML('submission__answer__part__text__1', real_text);
-                });        
-        editor.on('focus', function (e) { 
-            var real_text = tinymce.activeEditor.getContent({format: 'raw'}); 
+        tinymce.activeEditor.dom.fire('click', console.log('Editor MCE activo'));
+        editor.on('focus', function (e) {
+            var real_text = tinymce.activeEditor.getContent({format: 'raw'});
                 tinymce.DOM.setHTML('submission__answer__part__text__1', real_text);
                 });
-        editor.on('change', function (e) { 
-            var real_text = tinymce.activeEditor.getContent({format: 'raw'}); 
+        editor.on('change', function (e) {
+            var real_text = tinymce.activeEditor.getContent({format: 'raw'});
                             tinymce.DOM.setHTML('submission__answer__part__text__1', real_text);
                             });
-        editor.on('keyup', function (e) { 
-            var real_text = tinymce.activeEditor.getContent({format: 'raw'}); 
+        editor.on('keyup', function (e) {
+            var real_text = tinymce.activeEditor.getContent({format: 'raw'});
                             tinymce.DOM.setHTML('submission__answer__part__text__1', real_text);
                             });
-        editor.on('drop', function (e) { 
-            var real_text = tinymce.activeEditor.getContent({format: 'raw'}); 
+        editor.on('drop', function (e) {
+            var real_text = tinymce.activeEditor.getContent({format: 'raw'});
                             tinymce.DOM.setHTML('submission__answer__part__text__1', real_text);
                             });
-        editor.on('paste', function (e) { 
-            var real_text = tinymce.activeEditor.getContent({format: 'raw'});  
+        editor.on('paste', function (e) {
+            var real_text = tinymce.activeEditor.getContent({format: 'raw'});
                             tinymce.DOM.setHTML('submission__answer__part__text__1', real_text);
-                            });                                                                                   
+                            });
                         }
                     });
     }
